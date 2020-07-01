@@ -47,6 +47,7 @@ CREATE TABLE IF NOT EXISTS `e_hospital`.`user` (
   `Name` VARCHAR(100) NOT NULL,
   `Age` INT(11) NOT NULL,
   `Blood Group` VARCHAR(45) NOT NULL,
+  `Weight` FLOAT NOT NULL
   `Height` FLOAT NOT NULL,
   `City` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`Mobile`))
