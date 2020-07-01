@@ -1,0 +1,11 @@
+body{
+	background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRteDOCY6mPfeLjryxLmhOYlvMvBv1kS49tlg&usqp=CAU);
+}
+
+.login{
+	color:red;
+}
+
+label{
+	color:orange;
+}
