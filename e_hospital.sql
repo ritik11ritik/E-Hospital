@@ -22,9 +22,13 @@ USE `e_hospital` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `e_hospital`.`doctor` (
   `mobile` VARCHAR(100) NOT NULL,
-  `name` VARCHAR(105) NOT NULL,
+  `first_name` VARCHAR(105) NOT NULL,
+  `last_name` VARCHAR(105) NOT NULL,
   `age` INT(11) NOT NULL,
-  `password` VARCHAR(400) NOT NULL,
+  `gender` VARCHAR(10) NOT NULL,
+  `password` VARCHAR(100) NOT NULL,
+  `city` VARCHAR(50) NOT NULL,
+  `state` VARCHAR(50) NOT NULL,
   `license_no` VARCHAR(100) NOT NULL,
   `experience` INT(11) NOT NULL,
   `approved` VARCHAR(10) NOT NULL DEFAULT 'NO',
@@ -42,13 +46,17 @@ DEFAULT CHARACTER SET = latin1;
 -- Table `e_hospital`.`user`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `e_hospital`.`user` (
-  `Mobile` VARCHAR(20) NOT NULL,
-  `Password` VARCHAR(145) NOT NULL,
-  `Name` VARCHAR(100) NOT NULL,
-  `Age` INT(11) NOT NULL,
-  `Blood Group` VARCHAR(45) NOT NULL,
-  `Height` FLOAT NOT NULL,
-  `City` VARCHAR(45) NOT NULL,
+  `mobile` VARCHAR(20) NOT NULL,
+  `password` VARCHAR(145) NOT NULL,
+  `first_name` VARCHAR(100) NOT NULL,
+  `last_name` VARCHAR(100) NOT NULL,
+  `age` INT(11) NOT NULL,
+  `gender` VARCHAR(10) NOT NULL,
+  `blood_group` VARCHAR(45) NOT NULL,
+  `weight` FLOAT NOT NULL,
+  `height` FLOAT NOT NULL,
+  `city` VARCHAR(45) NOT NULL,
+  `state` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`Mobile`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = latin1;
